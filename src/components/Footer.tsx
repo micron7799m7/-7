@@ -3,7 +3,7 @@ import { Logo } from './Logo';
 import { COMPANY_INFO } from '../data/franchiseData';
 import { TermsModal } from './TermsModal';
 import { getKakaoChannelConfig, KakaoChannelConfig } from '../services/inquiryService';
-import { Phone, Mail, MapPin, ArrowUp, MessageCircle, Download } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUp, MessageCircle } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const [modalType, setModalType] = useState<'privacy' | 'terms' | null>(null);
@@ -143,49 +143,6 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Hosting & Source Download Quick Bar */}
-        <div className="my-6 p-4 sm:p-5 rounded-2xl bg-[#3A1803] border border-yellow-600/30 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
-          <div className="flex items-center gap-3 text-center md:text-left">
-            <div className="w-10 h-10 rounded-xl bg-yellow-400/20 text-yellow-300 flex items-center justify-center shrink-0">
-              <Download className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="text-sm sm:text-base font-black text-white flex items-center gap-2 justify-center md:justify-start">
-                <span>가비아(Gabia) 웹호스팅 업로드 파일 다운로드</span>
-                <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">하얀 화면 해결 완료</span>
-              </h4>
-              <p className="text-xs sm:text-sm text-stone-300">
-                상대경로(./)와 .htaccess 설정이 완비된 최신 파일입니다. 다운로드 후 가비아 html 폴더에 압축을 풀어주세요.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 shrink-0 flex-wrap justify-center">
-            <a
-              href="/gabia-upload-dist.zip"
-              download="gabia-upload-dist.zip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-md active:scale-95"
-              title="가비아 웹호스팅 html 폴더에 바로 올릴 수 있는 수정된 파일 (39.9MB)"
-            >
-              <Download className="w-4 h-4" />
-              <span>가비아 호스팅용(ZIP) 다운로드</span>
-            </a>
-            <a
-              href="/manna-tongdak-homepage.zip"
-              download="manna-tongdak-homepage.zip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer px-3.5 py-2.5 rounded-xl bg-yellow-500/20 hover:bg-yellow-500/30 text-yellow-300 font-black text-xs sm:text-sm border border-yellow-400/40 flex items-center gap-2 transition-all active:scale-95"
-              title="전체 개발 소스코드 압축파일 (46.0MB)"
-            >
-              <Download className="w-4 h-4" />
-              <span>전체 소스코드(ZIP)</span>
-            </a>
-          </div>
-        </div>
-
         {/* Corporate Legal Footer Row */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm sm:text-base text-stone-300">
           <div className="space-y-1 text-center md:text-left leading-relaxed">
@@ -202,30 +159,6 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2.5 flex-wrap justify-center md:justify-end">
-            <a
-              href="/gabia-upload-dist.zip"
-              download="gabia-upload-dist.zip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 font-bold border border-emerald-500/40 text-xs flex items-center gap-1.5 transition-colors"
-              title="가비아 웹호스팅(html 폴더)에 바로 업로드하는 압축파일 다운로드"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>가비아 호스팅 업로드용(ZIP)</span>
-            </a>
-            <span className="opacity-40 hidden sm:inline">|</span>
-            <a
-              href="/manna-tongdak-homepage.zip"
-              download="manna-tongdak-homepage.zip"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer px-3 py-1.5 rounded-lg bg-yellow-400/20 hover:bg-yellow-400/30 text-yellow-300 font-bold border border-yellow-400/40 text-xs flex items-center gap-1.5 transition-colors"
-              title="바탕화면 등에 저장할 수 있는 홈페이지 전체 소스코드 압축파일 다운로드"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>전체 소스코드(ZIP)</span>
-            </a>
-            <span className="opacity-40 hidden sm:inline">|</span>
             <button
               onClick={() => {
                 window.dispatchEvent(new CustomEvent('manna:open_admin_modal'));
