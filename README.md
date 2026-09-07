@@ -1,11 +1,58 @@
-<div align="center">
+# 만나옛날통닭 가맹본부 공식 웹사이트
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> **맛있는 추억, 정직한 성공!**  
+> 1인 소자본 맞춤 창업, 포장 9,900원 파격 특가 및 강력한 본사 물류 시스템을 갖춘 대한민국 대표 가옛통닭 프랜차이즈 **만나옛날통닭**의 공식 가맹안내 및 실시간 온라인 가맹문의 플랫폼입니다.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🍗 주요 기능
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **브랜드 경쟁력 소개**: 포장 9,900원 박리다매 전략, 1인 운영 특화 주방 동선, 4단계 본사 밀착 케어 시스템
+- **대표 메뉴 라인업**: 옛날통닭, 닭강정, 똥집튀김, 특제 소스 6종 등
+- **창업 프로세스 & 상권 분석**: 7단계 오픈 프로세스 및 A타입(10평 매장형) / B타입(배달·포장형) 창업비용 안내
+- **실시간 가맹문의 원클릭 접수**:
+  - 온라인 간편 신청 폼
+  - 접수 즉시 네이버 메일(`krook777@naver.com`) 및 지메일(`krook7799@gmail.com`) 실시간 2중 발송
+  - 가맹 직통 대표번호(`1661-8518`) 원클릭 전화 연결
+- **카카오 비즈니스 채널 1:1 상담 연동**:
+  - 실시간 카카오톡 비즈니스 채널 1:1 채팅 연동
+  - 플로팅 버튼, 모바일 하단 고정 바, 헤더 및 신청완료 화면 지원
+- **관리자 전용 센터 (Admin Portal)**:
+  - 비밀번호 보안 인증
+  - 실시간 가맹문의 접수 내역 열람 및 상담 상태 변경(신규접수 / 상담진행 / 상담완료)
+  - 관리자 내부 메모 작성 및 엑셀(CSV) 다운로드
+  - 카카오 비즈니스 채널 URL/ID 실시간 설정 관리
+  - 홈페이지 전체 소스코드 ZIP 백업 다운로드
 
-</div>
+---
+
+## 🛠 기술 스택
+
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Motion (Framer Motion)
+- **Deployment**: Google Cloud Run / AI Studio
+
+---
+
+## 🚀 로컬 실행 방법
+
+```bash
+# 1. 의존성 패키지 설치
+npm install
+
+# 2. 로컬 개발 서버 실행 (포트 3000)
+npm run dev
+
+# 3. 프로덕션 빌드
+npm run build
+```
+
+---
+
+## 📞 가맹 문의 및 본사 안내
+
+- **가맹문의 직통 대표전화**: 1661-8518
+- **본사 주소**: 경기도 부천시 소사구 소사로 179번길 18, 1층
+- **대표 이메일**: krook777@naver.com / krook7799@gmail.com

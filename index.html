@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>만나옛날통닭 공식 가맹 홈페이지</title>
+    <meta name="description" content="맛있는게 생각날때~ 만나옛날통닭 프랜차이즈 공식 홈페이지. 겉바속촉 100% 국내산 하림 생닭 옛날통닭과 1:1 맞춤 가맹 창업 상담 안내." />
+    <meta property="og:title" content="만나옛날통닭 공식 가맹 홈페이지" />
+    <meta property="og:description" content="맛있는게 생각날때~ 만나옛날통닭 프랜차이즈 공식 홈페이지. 겉바속촉 100% 국내산 하림 생닭 옛날통닭과 1:1 맞춤 가맹 창업 상담 안내." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mannachicken.co.kr" />
+    <link rel="canonical" href="https://mannachicken.co.kr" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans antialiased text-[#2D1503] bg-[#FDFBF7] selection:bg-yellow-200 selection:text-[#2D1503]">
+    <noscript>
+      <div style="padding: 24px; text-align: center; font-family: sans-serif; background: #2D1503; color: #fff;">
+        <h1 style="color: #FACC15; font-size: 24px; margin-bottom: 8px;">만나옛날통닭 공식 가맹 홈페이지</h1>
+        <p style="font-size: 16px; margin-bottom: 16px;">자바스크립트 실행이 필요합니다. 가맹 창업 직통 문의: <strong>1661-8518</strong> / <strong>010-8111-5742</strong></p>
+      </div>
+    </noscript>
+
+    <div id="root">
+      <!-- 초기 로딩 스켈레톤 (자바스크립트 로딩 전 하얀 화면 방지) -->
+      <div id="loading-fallback" style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #FDFBF7; font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif; padding: 20px; text-align: center;">
+        <div id="loading-spinner" style="width: 56px; height: 56px; border: 4px solid #FDE68A; border-top-color: #B91C1C; border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 18px;"></div>
+        <h2 style="font-size: 20px; font-weight: 800; color: #2D1503; margin: 0 0 6px 0;">만나옛날통닭</h2>
+        <p id="loading-text" style="font-size: 14px; color: #78716C; margin: 0 0 16px 0;">홈페이지를 불러오는 중입니다...</p>
+        <div id="loading-fallback-actions" style="display: none; flex-direction: column; align-items: center; gap: 10px; max-width: 320px;">
+          <p style="font-size: 13px; color: #B91C1C; font-weight: 600; margin: 0;">로딩이 지연되고 있습니다. 브라우저 캐시를 새로고침 해주세요.</p>
+          <button onclick="location.reload(true)" style="padding: 10px 20px; background-color: #B91C1C; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 14px;">페이지 새로고침 (F5)</button>
+          <div style="font-size: 13px; color: #2D1503; margin-top: 8px;">가맹문의: <strong>1661-8518</strong> / 직통: <strong>010-8111-5742</strong></div>
+        </div>
+        <style>
+          @keyframes spin {
+            to { transform: rotate(360deg); }
+          }
+        </style>
+      </div>
+    </div>
+    <script>
+      // 5초 이상 로딩되지 않을 경우 비상 안내 표시
+      setTimeout(function() {
+        var actions = document.getElementById('loading-fallback-actions');
+        if (actions && document.getElementById('loading-fallback')) {
+          actions.style.display = 'flex';
+          var text = document.getElementById('loading-text');
+          if (text) text.style.display = 'none';
+        }
+      }, 5000);
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
