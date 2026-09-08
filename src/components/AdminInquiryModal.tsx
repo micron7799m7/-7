@@ -301,10 +301,6 @@ export const AdminInquiryModal: React.FC<AdminInquiryModalProps> = ({ isOpen, on
             <div>
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className="text-lg sm:text-xl font-black tracking-tight">가맹문의 통합 관리 센터</h3>
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-yellow-400/20 text-yellow-300 text-xs font-black border border-yellow-400/30">
-                  <span className="w-2 h-2 rounded-full bg-[#FEE500] animate-pulse" />
-                  카카오톡(krook7799) & 네이버(krook777) 연동
-                </span>
               </div>
               <p className="text-xs sm:text-sm text-stone-300">
                 실시간 간편접수 즉시 통보 및 고객 상담 이력 관리 시스템
@@ -389,19 +385,6 @@ export const AdminInquiryModal: React.FC<AdminInquiryModalProps> = ({ isOpen, on
                     <span>{authError}</span>
                   </p>
                 )}
-              </div>
-
-              <div className="p-3 bg-yellow-50 rounded-xl border border-yellow-200 text-xs sm:text-sm text-[#5C320A] flex items-start gap-2">
-                <ShieldCheck className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold">기본 설정 비밀번호: </span>
-                  <code className="bg-yellow-200/80 px-2 py-0.5 rounded font-black text-[#2D1503]">
-                    {getAdminPassword()}
-                  </code>
-                  <p className="text-xs text-stone-500 mt-1 font-normal">
-                    (로그인 후 우측 상단에서 원하시는 비밀번호로 자유롭게 변경 가능합니다)
-                  </p>
-                </div>
               </div>
 
               <button
